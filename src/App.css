@@ -1,10 +1,26 @@
 .App {
-  text-align: center;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-info li {
+  list-style: none;
+}
+
+.weather-info .temperature {
+  font-size: 48px;
+  font-style: bold;
+  color: #202124;
+}
+
+.weather-info .detail-info {
+  color: #70757a;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 9px;
+  padding-top: 6px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

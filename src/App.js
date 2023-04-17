@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Search from "./Search";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -8,7 +8,11 @@ function App() {
       <h1>Weather App</h1>
       <Search />
       <footer>
-        <a href="https://github.com/hamidehparsa/weather-react" target="_blank">
+        <a
+          href="https://github.com/hamidehparsa/weather-react"
+          target="_blank"
+          rel="noreferrer"
+        >
           Open-source code
         </a>
         by Hamideh Parsaeian

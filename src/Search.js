@@ -16,14 +16,23 @@ export default function Search() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Type a city name"
-          onChange={showCityInfo}
-        />
-        <input type="submit" value="Search" />
-      </form>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="search"
+                placeholder="Type a city name"
+                onChange={showCityInfo}
+                size="50"
+              />
+            </div>
+            <div className="col-3">
+              <input className="btn btn-primary" type="submit" value="Search" />
+            </div>
+          </div>
+        </form>
+      </div>
       <p>{info}</p>
     </div>
   );
